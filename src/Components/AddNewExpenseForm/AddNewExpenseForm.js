@@ -30,15 +30,15 @@ export default function AddNewExpenseForm(props) {
         <div>
             {isShowForm ? (
                 <form id="formSubmit" onSubmit={handleSubmit}>
-                    <div className="d-flex align-items-center justify-content-between" style={{ width: 800 }}>
+                    <div className="d-flex align-items-center justify-content-between" style={{ width: 750 }}>
                         <label for="exampleInputName" className="form-label">Name</label>
                         <input style={{ width: 600 }} type="text" className="form-control" id="exampleInputName" onChange={handleChange} name="name" value={handleChangeValue.name} />
                     </div>
-                    <div className="d-flex align-items-center justify-content-between " style={{ width: 800 }} >
+                    <div className="d-flex align-items-center justify-content-between " style={{ width: 750 }} >
                         <label for="exampleInputAmount" className="form-label">Amount</label>
                         <input style={{ width: 600 }} type="number" className="form-control" id="exampleInputAmount" onChange={handleChange} name="amount" value={handleChangeValue.amount} />
                     </div>
-                    <div className="d-flex align-items-center justify-content-between" style={{ width: 800 }}>
+                    <div className="d-flex align-items-center justify-content-between" style={{ width: 750 }}>
                         <label for="exampleInputDate" className="form-label">Date</label>
                         <input style={{ width: 600 }} type="date" className="form-control" id="exampleInputDate" onChange={handleChange} name="date" value={handleChangeValue.date} />
                     </div>

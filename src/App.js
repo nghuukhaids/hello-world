@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import AddNewExpenseForm from './Components/AddNewExpenseForm/AddNewExpenseForm';
@@ -29,7 +28,7 @@ function App() {
   }, [items, filterValue])
   return (
     <div className="App">
-      <div style={{ height: 1500 }}>
+      <div style={{ height: 1500,  width: 800 }}>
         <AddNewExpenseForm onAddNew={handleAddNew} />
         <ExpenseFilter value={filterValue} onChange={handleFilterChange} />
         <ExpenseChart items={displayItems} />
