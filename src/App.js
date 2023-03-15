@@ -24,11 +24,10 @@ function App() {
       return new Date(item.date).getFullYear() === +filterValue.year;
     });
     setDisplayItems(filteredItems)
-    console.log(displayItems)
   }, [items, filterValue])
   return (
     <div className="App">
-      <div style={{ height: 1500,  width: 800 }}>
+      <div style={{ height: 1500, width: 800 }}>
         <AddNewExpenseForm onAddNew={handleAddNew} />
         <ExpenseFilter value={filterValue} onChange={handleFilterChange} />
         <ExpenseChart items={displayItems} />
